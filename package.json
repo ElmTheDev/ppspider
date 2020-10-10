@@ -33,6 +33,7 @@
   },
   "bundleDependencies": false,
   "dependencies": {
+    "puppeteer-core": "^3.0.1",
     "ansi-colors": "^3.2.4",
     "cron": "^1.7.1",
     "express": "^4.16.4",
