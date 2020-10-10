@@ -1,15 +1,68 @@
 {
-  "name": "ppspider",
-  "author": "xiyuan_fengyu <xiyuan_fengyu@163.com> (https://github.com/xiyuan-fengyu)",
-  "homepage": "github.com/xiyuan-fengyu/ppspider",
-  "version": "2.2.4-preview.1595667732337",
-  "description": "web spider, support puppeteer, cheerio and so on, include task-queue and dispatcher",
-  "main": "./lib/index.js",
-  "types": "./lib/index.d.ts",
-  "scripts": {
-    "auto build": "tsc",
-    "generate README toc": "markdown-toc -i ./README.en.md && markdown-toc -i ./README.md"
+  "_from": "ppspider",
+  "_id": "ppspider@2.2.4-preview.1595667732337",
+  "_inBundle": false,
+  "_integrity": "sha512-OMKNCQIyt1tI7lgPxFuDSxQwqrczIVz0/nxKk2ap6jvmXfvQaKubVeQtDmDkyudhLmUyJ0yeyoZKw28cJohrxw==",
+  "_location": "/ppspider",
+  "_phantomChildren": {
+    "es6-promisify": "5.0.0",
+    "ms": "2.1.2"
   },
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "ppspider",
+    "name": "ppspider",
+    "escapedName": "ppspider",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/ppspider/-/ppspider-2.2.4-preview.1595667732337.tgz",
+  "_shasum": "e506726717f0e8afdb48d0d1fc320bd188f989db",
+  "_spec": "ppspider",
+  "_where": "C:\\Users\\Elmedin\\Documents\\GitHub\\ticket-browser-handler",
+  "author": {
+    "name": "xiyuan_fengyu",
+    "email": "xiyuan_fengyu@163.com",
+    "url": "https://github.com/xiyuan-fengyu"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "ansi-colors": "^3.2.4",
+    "cron": "^1.7.1",
+    "express": "^4.16.4",
+    "http-proxy-agent": "^2.1.0",
+    "https-proxy-agent": "^2.2.1",
+    "moment": "^2.24.0",
+    "mongodb": "^3.2.5",
+    "nedb": "^1.8.0",
+    "reflect-metadata": "^0.1.13",
+    "request": "^2.88.0",
+    "socket.io": "^2.2.0",
+    "socks-proxy-agent": "^4.0.2",
+    "source-map-support": "^0.5.11",
+    "typescript": "^3.3.3"
+  },
+  "deprecated": false,
+  "description": "web spider, support puppeteer, cheerio and so on, include task-queue and dispatcher",
+  "devDependencies": {
+    "@types/cron": "^1.7.0",
+    "@types/express": "^4.16.1",
+    "@types/jquery": "^3.3.29",
+    "@types/mongodb": "^3.1.27",
+    "@types/nedb": "^1.8.5",
+    "@types/node": "^11.9.4",
+    "@types/puppeteer": "1.20.3",
+    "@types/request": "^2.48.1",
+    "@types/socket.io": "^2.1.2",
+    "markdown-toc": "^1.2.0"
+  },
+  "homepage": "http://github.com/xiyuan-fengyu/ppspider",
   "keywords": [
     "spider",
     "crawler",
@@ -23,32 +76,12 @@
     "task-scheduling"
   ],
   "license": "MIT",
-  "dependencies": {
-    "express": "^4.16.4",
-    "cron": "^1.7.1",
-    "nedb": "^1.8.0",
-    "mongodb": "^3.2.5",
-    "request": "^2.88.0",
-    "http-proxy-agent": "^2.1.0",
-    "https-proxy-agent": "^2.2.1",
-    "socks-proxy-agent": "^4.0.2",
-    "socket.io": "^2.2.0",
-    "source-map-support": "^0.5.11",
-    "typescript": "^3.3.3",
-    "reflect-metadata": "^0.1.13",
-    "moment": "^2.24.0",
-    "ansi-colors": "^3.2.4"
+  "main": "./lib/index.js",
+  "name": "ppspider",
+  "scripts": {
+    "auto build": "tsc",
+    "generate README toc": "markdown-toc -i ./README.en.md && markdown-toc -i ./README.md"
   },
-  "devDependencies": {
-    "@types/express": "^4.16.1",
-    "@types/jquery": "^3.3.29",
-    "@types/cron": "^1.7.0",
-    "@types/nedb": "^1.8.5",
-    "@types/mongodb": "^3.1.27",
-    "@types/node": "^11.9.4",
-    "@types/puppeteer": "1.20.3",
-    "@types/request": "^2.48.1",
-    "@types/socket.io": "^2.1.2",
-    "markdown-toc": "^1.2.0"
-  }
+  "types": "./lib/index.d.ts",
+  "version": "2.2.4-preview.1595667732337"
 }
