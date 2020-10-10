@@ -1,4 +1,4 @@
-import { LaunchOptions } from "puppeteer";
+import { LaunchOptions } from "puppeteer-core";
 import { WorkerFactory } from "../spider/worker/WorkerFactory";
 import { Page } from "./Page";
 export declare class PuppeteerWorkerFactory implements WorkerFactory<Page> {

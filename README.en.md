@@ -483,7 +483,7 @@ class App {
 
 ```
 import {Job, OnStart, PuppeteerWorkerFactory} from "ppspider";
-import {Page} from "puppeteer";
+import {Page} from "puppeteer-core";
 
 export class TestTask {
 
@@ -555,7 +555,7 @@ Job panel: search jobs and view details
     import {Page} from "ppspider";
     ```
     and then declare a page: Page parameter in the parameter list of the callback function. If use
-  Import {Page} from "puppeteer" to import Page, the imported Page is just an interface, which cannot be determined at runtime by reflect-metadata,
+  Import {Page} from "puppeteer-core" to import Page, the imported Page is just an interface, which cannot be determined at runtime by reflect-metadata,
   and the page instance will not be injected successfully. This error is checked during startup.  
 
 
@@ -615,7 +615,7 @@ Job panel: search jobs and view details
    Be careful that the class Page is provided in the ppspider package, not the interface Page defined in @types/puppeteer.
     
    Because of this change, some code needs to be upgraded. You need to remove the workerFactory property in @OnStart, @OnTime, @FromQueue. 
-   If you want to use page: Page in the method decorated by @OnStart, @OnTime, @FromQueue, you need to import {Page} from "ppspider" instead of "puppeteer", 
+   If you want to use page: Page in the method decorated by @OnStart, @OnTime, @FromQueue, you need to import {Page} from "ppspider" instead of "puppeteer-core", 
    other parameters except job: Job should be removed. The order and name of the parameters can be defined freely.
    If the job: Job is not used in the method, you can also remove this parameter.
    

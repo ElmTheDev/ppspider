@@ -1,4 +1,4 @@
-import {Page, Request, Response} from "puppeteer";
+import {Page, Request, Response} from "puppeteer-core";
 
 export type PageRequest = {
     id: string,

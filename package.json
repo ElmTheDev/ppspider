@@ -66,7 +66,7 @@
   "keywords": [
     "spider",
     "crawler",
-    "puppeteer",
+    "puppeteer-core",
     "cheerio",
     "headless",
     "chromium",

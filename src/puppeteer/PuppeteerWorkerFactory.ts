@@ -1,4 +1,4 @@
-import {Browser, launch, LaunchOptions} from "puppeteer";
+import {Browser, launch, LaunchOptions} from "puppeteer-core";
 import {WorkerFactory} from "../spider/worker/WorkerFactory";
 import {logger} from "../common/util/logger";
 import {Page} from "./Page";

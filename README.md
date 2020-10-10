@@ -440,7 +440,7 @@ class App {
 然后在要调试的注入代码前加一行 debugger;  
 ```
 import {Job, OnStart, PuppeteerWorkerFactory} from "ppspider";
-import {Page} from "puppeteer";
+import {Page} from "puppeteer-core";
 
 export class TestTask {
 
@@ -514,7 +514,7 @@ Job 面板可以对所有子任务实例进行搜索，查看任务详情
      import {Page} from "ppspider";
      ```
      引入 Page class，然后在回调函数的参数列表中声明一个 page: Page 参数即可。如果通过 
-    import {Page} from "puppeteer" 引入，引入的 Page 只是一个 interface，通过 reflect-metadata 无法在运行时判定
+    import {Page} from "puppeteer-core" 引入，引入的 Page 只是一个 interface，通过 reflect-metadata 无法在运行时判定
     参数类型，导致 page 参数无法正常注入，这个错误在启动过程中就会检查出来。  
           
 # 更新日志
@@ -570,7 +570,7 @@ Job 面板可以对所有子任务实例进行搜索，查看任务详情
      注意是 ppspider 包中提供的 class Page，而不是 @types/puppeteer 中定义的 interface Page）。  
      
      因为这个更改，需要对一些代码进行升级，需要移除 @OnStart, @OnTime, @FromQueue 参数中的 workerFactory 属性，回调函数
-     参数列表中如果要用到 page: Page，需要将 import {Page} from "puppeteer" 改为 import {Page} from "ppspider"，其他除了
+     参数列表中如果要用到 page: Page，需要将 import {Page} from "puppeteer-core" 改为 import {Page} from "ppspider"，其他除了
      job: Job 的参数都删除掉。参数列表的顺序和名字都可以随意定义，如果回调方法中没有用到 job: Job，也可以把这个参数删掉。  
         
 2. 修复 @AddToQueue 不和 @OnStart / @OnTime / @FromQueue 一起使用时失效的bug  

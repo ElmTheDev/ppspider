@@ -1,4 +1,4 @@
-import { Frame, Page, Request, Response, SetCookie } from "puppeteer";
+import { Frame, Page, Request, Response, SetCookie } from "puppeteer-core";
 import { EasingFunctions } from "../common/util/Paths";
 export declare type ResponseListener = (response: Response) => any;
 export declare enum DownloadImgError {

@@ -1,5 +1,5 @@
 import * as os from "os";
-import {Frame, Page, Request, Response, SetCookie} from "puppeteer";
+import {Frame, Page, Request, Response, SetCookie} from "puppeteer-core";
 import * as fs from "fs";
 import {DownloadUtil} from "../common/util/DownloadUtil";
 import {logger} from "../common/util/logger";
