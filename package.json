@@ -28,7 +28,6 @@
     "cron": "^1.7.1",
     "nedb": "^1.8.0",
     "mongodb": "^3.2.5",
-    "puppeteer": "2.0.0",
     "request": "^2.88.0",
     "http-proxy-agent": "^2.1.0",
     "https-proxy-agent": "^2.2.1",
