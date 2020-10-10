@@ -1,0 +1,1 @@
+{"version":3,"file":"JobOverride.js","sourceRoot":"","sources":["../../../src/spider/decorators/JobOverride.ts"],"names":[],"mappings":";;AAAA,yCAAgD;AAShD,SAAgB,WAAW,CAAC,SAAiB;IACzC,OAAO,UAAU,MAAM,EAAE,GAAG,EAAE,UAAU;QACpC,+BAAoB,CAAC,SAAS,EAAE;YAC5B,MAAM,EAAE,MAAM;YACd,MAAM,EAAE,UAAU,CAAC,KAAK;SAC3B,CAAC,CAAC;QACH,OAAO,UAAU,CAAC;IACtB,CAAC,CAAA;AACL,CAAC;AARD,kCAQC"}
